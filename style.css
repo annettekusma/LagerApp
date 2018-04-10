@@ -1,0 +1,93 @@
+/* style.css for AK's Me-App, a bth-exercise 2018 */
+
+/*
+TODOs:
+
+* more visual appeal to github-list
+* fix text about me
+* start backgroundpic from bottom, fix AK
+* prep for bigger devices: incorporate broad png, fix maximum width for long text and centering headings.
+* extra: add extra info to github-list (e.g. description for each item)
+* extra: use swipe to switch views
+* extra: show nav-bar on top of screen in bigger devices, own-extra: center it.
+
+*/
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-image: url("../img/sunset_narr_hi-res.png");
+    background-size: cover;
+    color: #ffc;
+    padding: 5px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 2.0rem;
+    display: flex;
+    flex-flow: row | nowrap;
+    justify-content: space-evenly;
+    color: #fffff2;
+    font-family: "Lucida Console", Monaco, monospace;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+a.nav {
+    padding: 5px;
+}
+
+a.nav.active {
+    background-color: red;
+}
+
+/* presentation view */
+
+.prens {
+    background-color: white;
+    padding: 0.6rem;
+    color: black;
+    font-family: 'Gurajada';
+}
+
+.prens h1 {    
+    font-size: 1.4rem;
+    font-variant: small-caps;
+}
+
+.prens h2 {
+    margin-bottom: 0.6rem;
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+.prens h4 {
+    margin-bottom: 0.2rem;
+    margin-top: 1.8rem;
+    line-height: 0.9;
+    /*    font-stretch: expanded;*//* not supported */
+    font-size: 1.4rem;
+}
+
+/*h4:first-of-type {
+    margin-top: 0.6rem;
+}*/
+
+.prens p {
+    margin-top: 0.2rem;
+    line-height: 1.3;
+    font-size: 1rem;
+    font-family: 'mate';
+}
+
+@media (min-width: 64em) {
+  html {
+    font-size: 112.5%;
+  }
+}
